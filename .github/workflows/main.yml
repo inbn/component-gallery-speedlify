@@ -13,8 +13,8 @@ jobs:
         uses: actions/cache@v2
         with:
           path: |
-            /_data/results-last-runs.json
-            /_data/results/**/*
+            _data/results-last-runs.json
+            _data/results/**/*
           key: results
       - name: Test and build
         run: npm run build-production
