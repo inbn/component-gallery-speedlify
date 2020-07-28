@@ -15,5 +15,6 @@ module.exports = {
         "https://component.gallery/components/",
         "https://component.gallery/design-systems/",
         "https://component.gallery/components/accordion/",
+        "https://component.gallery/components/button/",
 	]
 };
