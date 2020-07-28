@@ -10,4 +10,4 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Test and build
-        run: build-production
+        run: npm run build-production
