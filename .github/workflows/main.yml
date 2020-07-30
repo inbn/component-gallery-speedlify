@@ -13,12 +13,13 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Cache results
-        uses: actions/cache@v2
+        uses: rouault/cache@master
         with:
           path: |
             _data/results-last-runs.json
             _data/results/**/*
           key: results
+          update: true 
       - name: Test and build
         run: npm run build-production
       - uses: jsmrcaga/action-netlify-deploy@master
