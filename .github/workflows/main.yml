@@ -35,14 +35,14 @@ jobs:
           command: cp
           source: ./_data/results-last-runs.json
           destination: s3://${{ secrets.AWS_BUCKET }}/_data/results-last-runs.json
-          aws_access_key_id: ${{ secret.AWS_KEY_ID }}
-          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Upload results data
         uses: keithweaver/aws-s3-github-action@master
         with:
           command: cp
           source: ./_data/results
           destination: s3://${{ secrets.AWS_BUCKET }}/_data/results
-          aws_access_key_id: ${{ secret.AWS_KEY_ID }}
-          aws_secret_access_key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
