@@ -40,7 +40,7 @@ jobs:
 
       - name: Upload results-last-runs.json to S3
         run: |
-          aws s3 sync ./_data/results-last-runs.json s3://${{ secrets.AWS_BUCKET }}/_data/results-last-runs.json
+          aws s3 cp ./_data/results-last-runs.json s3://${{ secrets.AWS_BUCKET }}/_data/results-last-runs.json
 
       - name: Upload results data to S3
         run: |
