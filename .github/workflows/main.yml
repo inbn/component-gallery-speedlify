@@ -2,7 +2,7 @@ name: Main
 on:
   push:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 23 * * 0'
 
 jobs:
   run-tests-deploy:
